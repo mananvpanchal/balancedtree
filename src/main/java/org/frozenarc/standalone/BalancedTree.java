@@ -42,7 +42,7 @@ public class BalancedTree {
         }
     }
 
-    public static List<Integer> leftRootRightArray(Node root) {
+    public static List<Integer> leftMiddleRightArray(Node root) {
         List<Integer> sorted = new ArrayList<>();
         populateList(sorted, root);
         return sorted;

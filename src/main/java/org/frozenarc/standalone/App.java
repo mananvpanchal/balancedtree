@@ -21,7 +21,7 @@ public class App
 
         BalancedTree.displayTree(unbalanced, "");
 
-        List<Integer> sorted = BalancedTree.leftRootRightArray(unbalanced);
+        List<Integer> sorted = BalancedTree.leftMiddleRightArray(unbalanced);
 
         System.out.println("Sorted: "+sorted);
 
