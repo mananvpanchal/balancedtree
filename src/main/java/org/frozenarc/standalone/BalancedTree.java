@@ -72,14 +72,14 @@ public class BalancedTree {
 
             node.setValue(list.get(mid));
 
-            List<Integer> leftList = new ArrayList<>(list.subList(0, mid));
+            List<Integer> leftList = list.subList(0, mid);
             if(leftList.size() > 0) {
                 Node left = new Node();
                 node.setLeft(left);
                 populateTree(left, leftList);
             }
 
-            List<Integer> rightList = new ArrayList<>(list.subList(mid + 1, list.size()));
+            List<Integer> rightList = list.subList(mid + 1, list.size());
             if(rightList.size() > 0) {
                 Node right = new Node();
                 node.setRight(right);
@@ -89,9 +89,7 @@ public class BalancedTree {
     }
 
     public static void displayTree(Node tree, String spaces) {
-        if (tree == null) {
-            return;
-        } else {
+        if (tree != null) {
             displayTree(tree.getLeft(), spaces + "   ");
             System.out.println(spaces + tree.getValue());
             displayTree(tree.getRight(), spaces + "   ");

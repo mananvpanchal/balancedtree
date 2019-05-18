@@ -10,8 +10,7 @@ import java.util.List;
 public class App 
 {
     public static void main( String[] args ) {
-
-        List<Integer> input = Arrays.asList(1, 3, 5, 8, 4, 9, 2);
+        tree(Arrays.asList(1, 3, 5, 8, 4, 9, 2));
     }
 
     public static void tree(List<Integer> input) {
