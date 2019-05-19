@@ -30,4 +30,12 @@ public class AppTest
 
         App.tree(input);
     }
+
+    @Test
+    public void test03()
+    {
+        List<Integer> input = Arrays.asList(3, 6, 2, 8, 7);
+
+        App.tree(input);
+    }
 }

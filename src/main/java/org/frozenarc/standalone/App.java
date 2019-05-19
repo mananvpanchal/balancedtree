@@ -19,7 +19,7 @@ public class App
 
         Node unbalanced = BalancedTree.makeTree(input);
 
-        BalancedTree.displayTree(unbalanced, "");
+        BalancedTree.displayTree(unbalanced);
 
         List<Integer> sorted = BalancedTree.leftMiddleRightArray(unbalanced);
 
@@ -27,6 +27,6 @@ public class App
 
         Node balanced = BalancedTree.makeBalancedTree(sorted);
 
-        BalancedTree.displayTree(balanced, "");
+        BalancedTree.displayTree(balanced);
     }
 }

@@ -88,11 +88,15 @@ public class BalancedTree {
         }
     }
 
-    public static void displayTree(Node tree, String spaces) {
+    public static void displayTree(Node tree) {
+        displayTree(tree, "");
+    }
+
+    private static void displayTree(Node tree, String spaces) {
         if (tree != null) {
-            displayTree(tree.getLeft(), spaces + "   ");
-            System.out.println(spaces + tree.getValue());
             displayTree(tree.getRight(), spaces + "   ");
+            System.out.println(spaces + tree.getValue());
+            displayTree(tree.getLeft(), spaces + "   ");
         }
     }
 }
